@@ -1,38 +1,74 @@
-.App {
+body {
+  background: #3278be;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.main-section{
+  background:transparent;
+  max-width: 600px;
+  width: 90%;
+  height: 50px;
+  margin: 30px auto;
+}
+.clock-holder{
+  width: 100%;
+  background:lightcyan;
+  margin: 30px auto;
+  position: relative;
+}
+.secundomer{
+  padding: 60px 0px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.secundomer span{
+  background: lightsteelblue;
+  color:#fff;
+  display: inline-block;
+  font-family: serif;
+  font-size: 22px;
+  padding: 20px;
+  background-repeat: 5px;
+  width: 70px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.secundomer .secundomer-btn {
+  background: rgba(206, 212, 212, 0.856);
+  margin-top: 30px;
+  margin-left: 5px;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 150px;
+  transition: background 1s;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.secundomer .secundomer-btn-red{
+  border: 2px solid tomato;
+  color:tomato;
 }
-
-.App-link {
-  color: #61dafb;
+.secundomer .secundomer-btn-yel{
+  border: 2px solid rgba(255, 255, 0, 0.555);
+  color:rgba(255, 255, 0, 0.568);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.secundomer .secundomer-btn-gre{
+  border: 2px solid green;
+  color:rgba(48, 48, 37, 0.911);
+}
+.secundomer .secundomer-btn-red:hover{
+  background: tomato;
+  border: 2px solid tomato;
+  color:rgba(48, 48, 37, 0.911);
+}
+.secundomer .secundomer-btn-yel:hover{
+  background: rgba(255, 255, 0, 0.315);
+  border: 2px solid rgba(255, 255, 0, 0.568);
+  color:rgba(48, 48, 37, 0.911);
+}
+.secundomer .secundomer-btn-gre:hover{
+  background: green;
+  border: 2px solid green;
+  color:rgba(48, 48, 37, 0.911);
 }
